@@ -1,0 +1,393 @@
+/* Lien vers le chargement de la police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header nav
+{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header nav .logo
+{
+    width: 150px;
+}
+
+header nav .menu
+{
+    display: flex;
+    align-items: center;
+}
+
+nav .menu a
+{
+    color: #fff;
+    margin-left: 30px;
+    position: relative;
+}
+
+nav .menu a::after
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+
+nav .menu a:hover::after
+{
+    width: 100%;
+}
+
+nav .social a i
+{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+nav .social a i:hover
+{
+    transform: scale(1.3);
+    color: #dd0707;
+}
+
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .text
+{
+    width: 90%;
+    margin: auto;
+}
+
+.hero .text h4
+{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "kelson_sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.hero .text h1
+{
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "kelson_sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.hero .text h1 span
+{
+    color: #dd0707;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.hero .text p
+{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero .text .btn
+{
+    padding: 10px 30px;
+    background-color: green;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.hero .text .btn:hover
+{
+    background-color: transparent;
+}
+
+.a-propos
+{
+    background-color: black;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* DOCUMENT INFORMATION
+    -document : Fiche de style Tarifs de Terry
+    -auteur : Terry Largemain
+    -version 1.0.0
+*/
+
+/* GLOBAL
+============================== */
+
+html
+{
+    background-color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+@keyframes letterSpacingH1 {
+    0% {
+        letter-spacing: 100px;
+        left: -100px;
+    }
+    50% {
+        left: 0;
+    }
+    100% {
+        letter-spacing: normal;
+    }
+}
+h1 {
+    color: #eee;
+    animation: letterSpacingH1 ease-out 3s forwards;
+    /* word-wrap: none; */
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+h2 {
+    color: #333;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: " ";
+    margin: 10px auto 0 auto;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h4 {
+
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+
+/* BOUTON */
+/* ============================== */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    transition: background-color 1s, color 1s, border 1s;
+    margin-bottom: 20px;
+}
+.btn-full {
+    background-color: azure;
+    color: #5ee077;
+    margin-right: 15px;
+}
+.btn-ghost {
+    border: 1px solid #fff;
+}
+.btn-full:hover {
+    background-color: #5ee077;
+    color: #fff;
+}
+.btn-ghost:hover {
+    background-color: #5ee077;
+    color: #fff;
+    border: 1px solid #5ee077;
+}
+
+
+
+
+
+
+/* PACKS
+============================== */
+
+.pack {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pack h3 {
+    color: dark;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -12px;
+    left: 5px;
+    letter-spacing: 1px;
+}
+
+.pack-premium {
+    background-color: #226711;
+    color: #fff;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #ccc;
+    /* margin-bottom: 10px; */
+}
+
+@keyframes flash-promo {
+    0% {
+        box-shadow: 0 0 20px #fff;
+        background-color: #fff;
+        color: green;
+    }
+    50% {
+        color: #a6c0a6;
+        box-shadow: 0 0 0 #000;
+        background-color: #072d4e;
+        animation-timing-function: ease;
+    }
+    100% {
+        color: green;
+        box-shadow: 0 0 20px #fff;
+        background-color: #fff;
+        animation-timing-function: ease;
+    }
+}
+
+.pack-title-premium {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+    padding: 0 5px;
+    animation: flash-promo 2s infinite;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.btn-pack {
+    background-color: #4aa234;
+    color: fff;
+    margin-bottom: 20px;
+}
+.btn-pack:hover {
+    background-color: #a0eb73;
+}
+
